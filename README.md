@@ -152,4 +152,4 @@ I've tweaked its appearance, added and modified features, installed extensions, 
 - [Operator Mono](https://www.typography.com/fonts/operator/styles)
 
 ## 🧑‍💻 Contributor
- ####Muhaiminul Islam
+ Muhaiminul Islam
