@@ -1,85 +1,84 @@
 # Visual Studio Code Customization
 
 ## 📝 Why?
-I've been a loyal user of Visual Studio Code since 2018, and it has become my preferred code editor. Its speed and flexibility make it a reliable choice for me, regardless of the operating system I'm using. Over the years, I've created numerous projects using this code editor, and I've made various customizations to tailor it to my preferences.
+I've been a loyal user of Visual Studio Code, and it has become my preferred code editor. Its speed and flexibility make it a reliable choice for me, regardless of the operating system I'm using.I've made various customizations to tailor it to my preferences.
 
 I've tweaked its appearance, added and modified features, installed extensions, and even created a personalized theme because I haven't found a theme that's absolutely perfect for me. Each time I set up a new work environment, I find myself manually configuring these settings. To streamline this process, I've uploaded all my settings here, so I can quickly apply them. Feel free to use any of them for your convenience.
 
 ## 🛠 VS Code Settings
 ```bash
-  {
-  "editor.fontSize": 20,
-  "editor.tabSize": 2,
-  "editor.wordWrap": "on",
-  "editor.cursorSmoothCaretAnimation": true,
-  "editor.cursorBlinking": "expand",
-  "editor.formatOnSave": true,
-  "editor.formatOnPaste": true,
-  "editor.formatOnType": true,
-  "workbench.colorCustomizations": {
-    "editorGroupHeader.tabsBackground": "#2c2c54",
-    "activityBar.background": "#2c2c54",
-    "sideBar.background": "#141422",
-    "minimap.background": "#141422",
-    "tab.activeBackground": "#706fd3",
-    "tab.inactiveBackground": "#191846",
-    "terminal.border": "#2c2c54",
-    "terminal.background": "#2c2c54",
-    "statusBar.background": "#474787",
-    "scrollbarSlider.background": "#474787",
-    "scrollbarSlider.hoverBackground": "#706fd3"
-  },
-  "editor.tokenColorCustomizations": {
-    "comments": "#95afc0"
-  },
-  "editor.linkedEditing": true,
-  "editor.bracketPairColorization.enabled": true,
-  "editor.guides.bracketPairs": true,
-  "editor.guides.bracketPairsHorizontal": true,
-  "editor.hover.enabled": false,
-  "window.zoomLevel": 1,
-  // Live Server 
-  "liveServer.settings.CustomBrowser": "chrome:PrivateMode",
-  "liveServer.settings.donotShowInfoMsg": true,
-  "liveServer.settings.donotVerifyTags": true,
-  // Live SASS Compiler
-  "liveSassCompile.settings.formats": [
-    {
-      "format": "compressed",
-      "extensionName": ".min.css",
-      "savePath": "/css"
-    }
-  ],
-  "liveSassCompile.settings.generateMap": false,
-  // VS Code Theme Customization
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Andromeda",
-  "workbench.editor.enablePreview": false,
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "terminal.integrated.fontSize": 20,
-  "diffEditor.wordWrap": "on",
-  "security.workspace.trust.untrustedFiles": "open"
-  // "files.autoSave": "afterDelay",
-  // "files.autoSaveDelay": 10,
+ {
+    "editor.fontFamily": "Operator Mono, Fira Code",
+    "editor.fontSize": 12,
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on",
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorBlinking": "expand",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "workbench.colorCustomizations": {
+      "editorGroupHeader.tabsBackground": "#2c2c54",
+      "activityBar.background": "#2c2c54",
+      "sideBar.background": "#141422",
+      "minimap.background": "#141422",
+      "tab.activeBackground": "#706fd3",
+      "tab.inactiveBackground": "#191846",
+      "terminal.border": "#2c2c54",
+      "terminal.background": "#2c2c54",
+      "statusBar.background": "#474787",
+      "scrollbarSlider.background": "#474787",
+      "scrollbarSlider.hoverBackground": "#706fd3"
+    },
+    "editor.tokenColorCustomizations": {
+      "comments": "#95afc0"
+    },
+    "editor.linkedEditing": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "editor.guides.bracketPairsHorizontal": true,
+    "editor.hover.enabled": false,
+    "window.zoomLevel": 1,
+    // Live Server 
+    "liveServer.settings.CustomBrowser": "chrome:PrivateMode",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.donotVerifyTags": true,
+    // Live SASS Compiler
+    "liveSassCompile.settings.formats": [
+      {
+        "format": "compressed",
+        "extensionName": ".min.css",
+        "savePath": "/css"
+      }
+    ],
+    "liveSassCompile.settings.generateMap": false,
+    // VS Code Theme Customization
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Andromeda",
+    "workbench.editor.enablePreview": false,
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.fontSize": 20,
+    "diffEditor.wordWrap": "on",
+    "security.workspace.trust.untrustedFiles": "open"
+    "files.autoSave",: "afterDelay",
+    "files.autoSaveDelay": 10,
+    
+    // Prettier Config
+    "prettier.proseWrap": "always",
+    "prettier.singleQuote": true,
+    "prettier.arrowParens": "avoid",
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "[html]": {
+      "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    // Screencast Mode
+    "screencastMode.onlyKeyboardShortcuts": true,
+    "screencastMode.mouseIndicatorColor": "#f1c40f",
+    "screencastMode.verticalOffset": 0,
+  }
   
-  // Prettier Config
-  "prettier.proseWrap": "always",
-  "prettier.singleQuote": true,
-  "prettier.arrowParens": "avoid",
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
-  // Screencast Mode
-  "screencastMode.onlyKeyboardShortcuts": true,
-  "screencastMode.mouseIndicatorColor": "#f1c40f",
-  "screencastMode.verticalOffset": 0,
 
-  // Enable Emmet support for JSX
-   "emmet.includeLanguages": {
-      "javascript": "javascriptreact"
-   }
-}
+
 
 ```
 
@@ -152,12 +151,5 @@ I've tweaked its appearance, added and modified features, installed extensions, 
 - [Fira Code](https://fonts.google.com/specimen/Fira+Code)
 - [Operator Mono](https://www.typography.com/fonts/operator/styles)
 
-## 🧑‍💻 Contributors
-- [@Ali Hossain](https://github.com/shovoalways/)
-
-
-## 🥰 Follow me
-- [@Github](https://github.com/shovoalways/) 
-- [@Facebook](https://facebook.com/shovoalways/) 
-- [@Twitter](https://twitter.com/shovoalways/) 
-- [@Instagram](https://instagram.com/shovoalways/) 
+## 🧑‍💻 Contributor
+- ####Muhaiminul Islam
