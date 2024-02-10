@@ -7,12 +7,19 @@ I've tweaked its appearance, added and modified features, installed extensions, 
 
 ## 🛠 VS Code Settings
 ```bash
- {
+{
     "editor.fontFamily": "Operator Mono, Fira Code",
-    "editor.fontSize": 12,
+    "code-runner.saveAllFilesBeforeRun": true,
+    "code-runner.runInTerminal": true,
     "editor.tabSize": 2,
     "editor.wordWrap": "on",
-    "editor.cursorSmoothCaretAnimation": true,
+    "terminal.integrated.defaultLocation": "editor",
+    "terminal.integrated.fontSize": 18,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.autoClosingBrackets": "always",
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 50,
+    "editor.codeLensFontSize": 12,
     "editor.cursorBlinking": "expand",
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
@@ -34,16 +41,12 @@ I've tweaked its appearance, added and modified features, installed extensions, 
       "comments": "#95afc0"
     },
     "editor.linkedEditing": true,
-    "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairs": true,
     "editor.guides.bracketPairsHorizontal": true,
-    "editor.hover.enabled": false,
-    "window.zoomLevel": 1,
-    // Live Server 
-    "liveServer.settings.CustomBrowser": "chrome:PrivateMode",
+    "window.zoomLevel": 0,
+    "liveServer.settings.CustomBrowser": "chrome",
     "liveServer.settings.donotShowInfoMsg": true,
     "liveServer.settings.donotVerifyTags": true,
-    // Live SASS Compiler
     "liveSassCompile.settings.formats": [
       {
         "format": "compressed",
@@ -52,33 +55,23 @@ I've tweaked its appearance, added and modified features, installed extensions, 
       }
     ],
     "liveSassCompile.settings.generateMap": false,
-    // VS Code Theme Customization
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "Andromeda",
-    "workbench.editor.enablePreview": false,
-    "terminal.integrated.defaultProfile.windows": "Git Bash",
-    "terminal.integrated.fontSize": 20,
-    "diffEditor.wordWrap": "on",
-    "security.workspace.trust.untrustedFiles": "open"
-    "files.autoSave",: "afterDelay",
-    "files.autoSaveDelay": 10,
-    
-    // Prettier Config
+    "editor.rename.enablePreview": false,
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "security.workspace.trust.untrustedFiles": "open",
     "prettier.proseWrap": "always",
     "prettier.singleQuote": true,
     "prettier.arrowParens": "avoid",
-      "editor.defaultFormatter": "esbenp.prettier-vscode",
-      "[html]": {
-      "editor.defaultFormatter": "vscode.html-language-features"
-    },
-    // Screencast Mode
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    // Screencast mode
     "screencastMode.onlyKeyboardShortcuts": true,
     "screencastMode.mouseIndicatorColor": "#f1c40f",
     "screencastMode.verticalOffset": 0,
+    "editor.fontSize": 20,
+    "chatgpt.lang": "en"
   }
   
-
-
 
 ```
 
