@@ -8,69 +8,72 @@ I've tweaked its appearance, added and modified features, installed extensions, 
 ## 🛠 VS Code Settings
 ```bash
 {
-    "editor.fontFamily": "Operator Mono, Fira Code",
-    "code-runner.saveAllFilesBeforeRun": true,
-    "code-runner.runInTerminal": true,
-    "editor.tabSize": 2,
-    "editor.wordWrap": "on",
-    "terminal.integrated.defaultLocation": "editor",
-    "terminal.integrated.fontSize": 18,
-    "editor.cursorSmoothCaretAnimation": "on",
-    "editor.autoClosingBrackets": "always",
-    "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 50,
-    "editor.codeLensFontSize": 12,
-    "editor.cursorBlinking": "expand",
-    "editor.formatOnSave": true,
-    "editor.formatOnPaste": true,
-    "editor.formatOnType": true,
-    "workbench.colorCustomizations": {
-      "editorGroupHeader.tabsBackground": "#2c2c54",
-      "activityBar.background": "#2c2c54",
-      "sideBar.background": "#141422",
-      "minimap.background": "#141422",
-      "tab.activeBackground": "#706fd3",
-      "tab.inactiveBackground": "#191846",
-      "terminal.border": "#2c2c54",
-      "terminal.background": "#2c2c54",
-      "statusBar.background": "#474787",
-      "scrollbarSlider.background": "#474787",
-      "scrollbarSlider.hoverBackground": "#706fd3"
-    },
-    "editor.tokenColorCustomizations": {
-      "comments": "#95afc0"
-    },
-    "editor.linkedEditing": true,
-    "editor.guides.bracketPairs": true,
-    "editor.guides.bracketPairsHorizontal": true,
-    "window.zoomLevel": 0,
-    "liveServer.settings.CustomBrowser": "chrome",
-    "liveServer.settings.donotShowInfoMsg": true,
-    "liveServer.settings.donotVerifyTags": true,
-    "liveSassCompile.settings.formats": [
-      {
-        "format": "compressed",
-        "extensionName": ".min.css",
-        "savePath": "/css"
-      }
-    ],
-    "liveSassCompile.settings.generateMap": false,
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Andromeda",
-    "editor.rename.enablePreview": false,
-    "terminal.integrated.defaultProfile.windows": "PowerShell",
-    "security.workspace.trust.untrustedFiles": "open",
-    "prettier.proseWrap": "always",
-    "prettier.singleQuote": true,
-    "prettier.arrowParens": "avoid",
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    // Screencast mode
-    "screencastMode.onlyKeyboardShortcuts": true,
-    "screencastMode.mouseIndicatorColor": "#f1c40f",
-    "screencastMode.verticalOffset": 0,
-    "editor.fontSize": 20,
-    "chatgpt.lang": "en"
-  }
+  "editor.fontFamily": "Operator Mono, Fira Code",
+  "code-runner.saveAllFilesBeforeRun": true,
+  "code-runner.runInTerminal": true,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "terminal.integrated.defaultLocation": "editor",
+  "terminal.integrated.fontSize": 17,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.autoClosingBrackets": "always",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 50,
+  "editor.codeLensFontSize": 12,
+  "editor.cursorBlinking": "expand",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "workbench.colorCustomizations": {
+    "editorGroupHeader.tabsBackground": "#2c2c54",
+    "activityBar.background": "#2c2c54",
+    "sideBar.background": "#141422",
+    "minimap.background": "#141422",
+    "tab.activeBackground": "#706fd3",
+    "tab.inactiveBackground": "#191846",
+    "terminal.border": "#2c2c54",
+    "terminal.background": "#2c2c54",
+    "statusBar.background": "#474787",
+    "scrollbarSlider.background": "#474787",
+    "scrollbarSlider.hoverBackground": "#706fd3"
+  },
+  "editor.tokenColorCustomizations": {
+    "comments": "#95afc0"
+  },
+  "editor.linkedEditing": true,
+  "editor.guides.bracketPairs": true,
+  "editor.guides.bracketPairsHorizontal": true,
+  "window.zoomLevel": 1.5,
+  "liveServer.settings.CustomBrowser": "chrome",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "/css"
+    }
+  ],
+  "liveSassCompile.settings.generateMap": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Andromeda Bordered",
+  "editor.rename.enablePreview": false,
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "security.workspace.trust.untrustedFiles": "open",
+  "prettier.proseWrap": "always",
+  "prettier.singleQuote": true,
+  "prettier.arrowParens": "avoid",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // Screencast mode
+  "screencastMode.onlyKeyboardShortcuts": true,
+  "screencastMode.mouseIndicatorColor": "#f1c40f",
+  "screencastMode.verticalOffset": 0,
+  "editor.fontSize": 20,
+  "chatgpt.lang": "en",
+  "editor.mouseWheelZoom": true,
+  "terminal.integrated.mouseWheelZoom": true
+}
+
   
 
 ```
