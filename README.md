@@ -102,6 +102,90 @@ I've tweaked its appearance, added and modified features, installed extensions, 
 - VSCode React Refactor (planbcoding)
 - Tailwind CSS IntelliSense (Tailwind Labs)
 
+## 🛠 VS Code Other Settings
+```bash
+{
+  "editor.fontFamily": "Operator Mono, Fira Code",
+  "code-runner.saveAllFilesBeforeRun": true,
+  "code-runner.runInTerminal": true,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "terminal.integrated.defaultLocation": "editor",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.autoClosingBrackets": "always",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 500,
+  "editor.codeLensFontSize": 12,
+  "editor.cursorBlinking": "expand",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "workbench.colorCustomizations": {
+    "editorGroupHeader.tabsBackground": "#2c2c54",
+    "activityBar.background": "#2c2c54",
+    "sideBar.background": "#212141",
+    "sideBar.foreground": "#ffffff",
+    "activityBar.foreground": "#1bde42",
+    "activityBar.inactiveForeground": "#FFFFFF",
+    "editor.selectionHighlightBorder": "#ffffff",
+    "editor.lineHighlightBackground": "#aa9e9e20",
+    "editor.background": "#000000",
+    "minimap.background": "#141422",
+    "tab.activeBackground": "#706fd3",
+    "tab.inactiveBackground": "#191846",
+    "terminal.border": "#2c2c54",
+    "terminal.background": "#06061e",
+    "statusBar.background": "#474787",
+    "scrollbarSlider.background": "#474787",
+    "scrollbarSlider.hoverBackground": "#706fd3"
+  },
+  "editor.tokenColorCustomizations": {
+    "comments": "#7575ac"
+  },
+  "editor.linkedEditing": true,
+  "editor.guides.bracketPairs": true,
+  "editor.guides.bracketPairsHorizontal": true,
+  "window.zoomLevel": 0.8,
+  "liveServer.settings.CustomBrowser": "chrome",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "/css"
+    }
+  ],
+  "liveSassCompile.settings.generateMap": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.rename.enablePreview": false,
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "security.workspace.trust.untrustedFiles": "open",
+  "prettier.proseWrap": "always",
+  "prettier.singleQuote": true,
+  "prettier.arrowParens": "avoid",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // Screencast mode
+  "screencastMode.onlyKeyboardShortcuts": true,
+  "screencastMode.mouseIndicatorColor": "#f1c40f",
+  "screencastMode.verticalOffset": 0,
+  "editor.fontSize": 20,
+  "chatgpt.lang": "en",
+  "editor.mouseWheelZoom": true,
+  "terminal.integrated.mouseWheelZoom": true,
+  "terminal.integrated.fontSize": 17,
+  "css.lint.unknownAtRules": "ignore",
+  "workbench.colorTheme": "Dark Chai",
+  "editor.quickSuggestions": {
+    "other": "inline"
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  }
+  
+}
+
+```
 
 ## 🎨 VS Code Themes
 - Andromeda 👈
