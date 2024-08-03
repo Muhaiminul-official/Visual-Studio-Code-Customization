@@ -136,6 +136,7 @@ I've tweaked its appearance, added and modified features, installed extensions, 
     "terminal.border": "#2c2c54",
     "terminal.background": "#06061e",
     "statusBar.background": "#474787",
+    "statusBar.foreground": "#f8f8f8",
     "scrollbarSlider.background": "#474787",
     "scrollbarSlider.hoverBackground": "#706fd3"
   },
@@ -177,12 +178,12 @@ I've tweaked its appearance, added and modified features, installed extensions, 
   "css.lint.unknownAtRules": "ignore",
   "workbench.colorTheme": "Dark Chai",
   "editor.quickSuggestions": {
-    "other": "inline"
+    "other": "inline",
+    "strings": "inline"
   },
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   }
-  
 }
 
 ```
