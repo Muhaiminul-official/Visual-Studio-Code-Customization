@@ -123,7 +123,7 @@ I've tweaked its appearance, added and modified features, installed extensions, 
   "workbench.colorCustomizations": {
     "editorGroupHeader.tabsBackground": "#2c2c54",
     "activityBar.background": "#2c2c54",
-    "sideBar.background": "#212141",
+    "sideBar.background": "#000000",
     "sideBar.foreground": "#ffffff",
     "activityBar.foreground": "#1bde42",
     "activityBar.inactiveForeground": "#FFFFFF",
@@ -131,7 +131,9 @@ I've tweaked its appearance, added and modified features, installed extensions, 
     "editor.lineHighlightBackground": "#aa9e9e20",
     "editor.background": "#000000",
     "minimap.background": "#141422",
-    "tab.activeBackground": "#706fd3",
+    "menu.background": "#283350",
+    "menu.foreground": "#ffffff",
+    "tab.activeBackground": "#000000",
     "tab.inactiveBackground": "#191846",
     "terminal.border": "#2c2c54",
     "terminal.background": "#06061e",
@@ -141,7 +143,7 @@ I've tweaked its appearance, added and modified features, installed extensions, 
     "scrollbarSlider.hoverBackground": "#706fd3"
   },
   "editor.tokenColorCustomizations": {
-    "comments": "#7575ac"
+    "comments": "#c8c8e9"
   },
   "editor.linkedEditing": true,
   "editor.guides.bracketPairs": true,
@@ -176,15 +178,19 @@ I've tweaked its appearance, added and modified features, installed extensions, 
   "terminal.integrated.mouseWheelZoom": true,
   "terminal.integrated.fontSize": 17,
   "css.lint.unknownAtRules": "ignore",
-  "workbench.colorTheme": "Dark Chai",
   "editor.quickSuggestions": {
-    "other": "inline",
-    "strings": "inline"
+    "strings": "on",
+    "comments": "on"
   },
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
-  }
+  },
+  "workbench.colorTheme": "Dark Chai",
+  "workbench.quickOpen.preserveInput": true,
+  "workbench.editor.enablePreviewFromQuickOpen": true,
+  "emmet.useInlineCompletions": true
 }
+
 
 ```
 
