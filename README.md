@@ -105,91 +105,138 @@ I've tweaked its appearance, added and modified features, installed extensions, 
 ## 🛠 VS Code Other Settings
 ```bash
 {
-  "editor.fontFamily": "Operator Mono, Fira Code",
-  "code-runner.saveAllFilesBeforeRun": true,
-  "code-runner.runInTerminal": true,
-  "editor.tabSize": 2,
-  "editor.wordWrap": "on",
-  "terminal.integrated.defaultLocation": "editor",
-  "editor.cursorSmoothCaretAnimation": "on",
-  "editor.autoClosingBrackets": "always",
-  "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 500,
-  "editor.codeLensFontSize": 12,
-  "editor.cursorBlinking": "expand",
-  "editor.formatOnSave": true,
-  "editor.formatOnPaste": true,
-  "editor.formatOnType": true,
+  // Editor Font Settings
+  "editor.fontFamily": "Operator Mono, Fira Code", // Sets the font family for the editor
+
+  // Code Runner Settings
+  "code-runner.saveAllFilesBeforeRun": true, // Automatically save all files before running the code
+  "code-runner.runInTerminal": true, // Runs code in the terminal instead of the output pane
+
+  // Editor Preferences
+  "editor.tabSize": 2, // Sets the tab size to 2 spaces
+  "editor.wordWrap": "on", // Enables word wrap in the editor
+  "terminal.integrated.defaultLocation": "editor", // Places terminal at the bottom of the editor
+  "editor.cursorSmoothCaretAnimation": "on", // Enables smooth caret animation
+  "editor.autoClosingBrackets": "always", // Automatically closes brackets
+  "files.autoSave": "afterDelay", // Automatically saves files after a delay
+  "files.autoSaveDelay": 500, // Delay before auto-saving (in ms)
+  "editor.codeLensFontSize": 12, // Font size for code lens
+  "editor.cursorBlinking": "expand", // Sets the cursor blinking style to expand
+  "editor.formatOnSave": true, // Automatically formats code on save
+  "editor.formatOnPaste": true, // Automatically formats code when pasting
+  "editor.formatOnType": true, // Automatically formats code while typing
+
+  // Custom Theme and Color Settings
   "workbench.colorCustomizations": {
-    "editorGroupHeader.tabsBackground": "#2c2c54",
-    "activityBar.background": "#2c2c54",
-    "sideBar.background": "#000000",
-    "sideBar.foreground": "#ffffff",
-    "activityBar.foreground": "#1bde42",
-    "activityBar.inactiveForeground": "#FFFFFF",
-    "editor.selectionHighlightBorder": "#ffffff",
-    "editor.lineHighlightBackground": "#aa9e9e20",
-    "editor.background": "#000000",
-    "minimap.background": "#141422",
-    "menu.background": "#283350",
-    "menu.foreground": "#ffffff",
-    "tab.activeBackground": "#000000",
-    "tab.inactiveBackground": "#191846",
-    "terminal.border": "#2c2c54",
-    "terminal.background": "#06061e",
-    "statusBar.background": "#474787",
-    "statusBar.foreground": "#f8f8f8",
-    "scrollbarSlider.background": "#474787",
-    "scrollbarSlider.hoverBackground": "#706fd3"
+    "editorGroupHeader.tabsBackground": "#2c2c54", // Background color for editor tabs
+    "activityBar.background": "#2c2c54", // Background color for the activity bar
+    "sideBar.background": "#000000", // Background color for the sidebar
+    "sideBar.foreground": "#ffffff", // Foreground color for the sidebar
+    "activityBar.foreground": "#1bde42", // Foreground color for the activity bar
+    "activityBar.inactiveForeground": "#FFFFFF", // Inactive foreground color for the activity bar
+    "editor.selectionHighlightBorder": "#ffffff", // Border color for highlighted selections
+    "editor.lineHighlightBackground": "#aa9e9e20", // Background color for the current line
+    "editor.background": "#000000", // Editor background color
+    "minimap.background": "#141422", // Minimap background color
+    "menu.background": "#283350", // Background color for menus
+    "menu.foreground": "#ffffff", // Foreground color for menus
+    "tab.activeBackground": "#000000", // Background color for active tabs
+    "tab.inactiveBackground": "#191846", // Background color for inactive tabs
+    "terminal.border": "#2c2c54", // Terminal border color
+    "terminal.background": "#06061e", // Terminal background color
+    "statusBar.background": "#474787", // Status bar background color
+    "statusBar.foreground": "#f8f8f8", // Status bar foreground color
+    "scrollbarSlider.background": "#474787", // Scrollbar background color
+    "scrollbarSlider.hoverBackground": "#706fd3" // Scrollbar hover background color
   },
+
+  // Editor Token Color Customizations
   "editor.tokenColorCustomizations": {
-    "comments": "#c8c8e9"
+    "comments": "#c8c8e9" // Custom color for comments
   },
-  "editor.linkedEditing": true,
-  "editor.guides.bracketPairs": true,
-  "editor.guides.bracketPairsHorizontal": true,
-  "window.zoomLevel": 0.8,
-  "liveServer.settings.CustomBrowser": "chrome",
-  "liveServer.settings.donotShowInfoMsg": true,
-  "liveServer.settings.donotVerifyTags": true,
+
+  // Linked Editing Settings
+  "editor.linkedEditing": true, // Enables linked editing
+  "editor.guides.bracketPairs": true, // Displays guides for bracket pairs
+  "editor.guides.bracketPairsHorizontal": true, // Displays horizontal guides for bracket pairs
+
+  // Window Zoom Level
+  "window.zoomLevel": 0.8, // Sets the zoom level for the window
+
+  // Live Server Settings
+  "liveServer.settings.CustomBrowser": "chrome", // Sets Chrome as the custom browser for Live Server
+  "liveServer.settings.donotShowInfoMsg": true, // Disables info messages in Live Server
+  "liveServer.settings.donotVerifyTags": true, // Disables tag verification in Live Server
+
+  // Live Sass Compile Settings
   "liveSassCompile.settings.formats": [
     {
-      "format": "compressed",
-      "extensionName": ".min.css",
-      "savePath": "/css"
+      "format": "compressed", // Compresses the output CSS file
+      "extensionName": ".min.css", // Sets the extension for the compressed file
+      "savePath": "/css" // Specifies the save path for the output file
     }
   ],
-  "liveSassCompile.settings.generateMap": false,
-  "workbench.iconTheme": "material-icon-theme",
-  "editor.rename.enablePreview": false,
-  "terminal.integrated.defaultProfile.windows": "PowerShell",
-  "security.workspace.trust.untrustedFiles": "open",
-  "prettier.proseWrap": "always",
-  "prettier.singleQuote": true,
-  "prettier.arrowParens": "avoid",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  // Screencast mode
-  "screencastMode.onlyKeyboardShortcuts": true,
-  "screencastMode.mouseIndicatorColor": "#f1c40f",
-  "screencastMode.verticalOffset": 0,
-  "editor.fontSize": 20,
-  "chatgpt.lang": "en",
-  "editor.mouseWheelZoom": true,
-  "terminal.integrated.mouseWheelZoom": true,
-  "terminal.integrated.fontSize": 17,
-  "css.lint.unknownAtRules": "ignore",
+  "liveSassCompile.settings.generateMap": false, // Disables generation of source maps
+
+  // Icon Theme Settings
+  "workbench.iconTheme": "material-icon-theme", // Sets the icon theme to Material Icon Theme
+
+  // Editor Rename Preview
+  "editor.rename.enablePreview": false, // Disables rename preview in the editor
+
+  // Terminal Settings
+  "terminal.integrated.defaultProfile.windows": "PowerShell", // Sets PowerShell as the default terminal profile in Windows
+  "security.workspace.trust.untrustedFiles": "open", // Opens untrusted files without warning
+
+  // Prettier Settings
+  "prettier.proseWrap": "always", // Forces Prettier to wrap prose
+  "prettier.singleQuote": true, // Uses single quotes in Prettier
+  "prettier.arrowParens": "avoid", // Avoids parentheses for single-parameter arrow functions
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // Sets Prettier as the default formatter
+
+  // Screencast Mode Settings
+  "screencastMode.onlyKeyboardShortcuts": true, // Shows only keyboard shortcuts in Screencast Mode
+  "screencastMode.mouseIndicatorColor": "#f1c40f", // Sets the color for the mouse indicator in Screencast Mode
+  "screencastMode.verticalOffset": 0, // Sets the vertical offset for Screencast Mode
+
+  // Font Size Settings
+  "editor.fontSize": 20, // Sets the font size in the editor
+  "chatgpt.lang": "en", // Sets the language to English for the ChatGPT extension
+  "editor.mouseWheelZoom": true, // Enables zooming with the mouse wheel in the editor
+  "terminal.integrated.mouseWheelZoom": true, // Enables zooming with the mouse wheel in the terminal
+  "terminal.integrated.fontSize": 17, // Sets the font size for the terminal
+
+  // CSS Linting Settings
+  "css.lint.unknownAtRules": "ignore", // Ignores unknown at-rules in CSS linting
+
+  // Editor Suggestions
   "editor.quickSuggestions": {
-    "strings": "on",
-    "comments": "on"
+    "strings": "on", // Enables quick suggestions for strings
+    "comments": "on" // Enables quick suggestions for comments
   },
+
+  // Language-Specific Formatter Settings
   "[cpp]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools"
+    "editor.defaultFormatter": "ms-vscode.cpptools" // Sets the default formatter for C++ to MS VSCode C++ Tools
   },
-  "workbench.colorTheme": "Dark Chai",
-  "workbench.quickOpen.preserveInput": true,
-  "workbench.editor.enablePreviewFromQuickOpen": true,
-  "emmet.useInlineCompletions": true
+
+  // Workbench Theme Settings
+  "workbench.colorTheme": "Dark Chai", // Sets the workbench color theme to Dark Chai
+  "workbench.quickOpen.preserveInput": true, // Preserves input in Quick Open
+  "workbench.editor.enablePreviewFromQuickOpen": true, // Enables preview when opening files from Quick Open
+
+  // Emmet Settings
+  "emmet.useInlineCompletions": true, // Enables inline completions for Emmet
+
+  // Quick Open Settings
+  "workbench.quickOpen.closeOnFocusLost": false, // Keeps Quick Open open when it loses focus
+
+  // Inline Suggestions
+  "editor.inlineSuggest.enabled": true, // Enables inline suggestions in the editor
+  "editor.suggest.showInlineDetails": true, // Shows inline details in suggestions
+  "editor.minimap.autohide": true // Automatically hides the minimap when not in use
 }
+
 
 
 ```
