@@ -278,7 +278,57 @@ I've tweaked its appearance, added and modified features, installed extensions, 
 |  To Close all TAB | Ctrl + Shift + W | cmd + Shift + W |
 
 
+## 🔑 VS Code Keybindings
+```
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+    "key": "f1 f2",
+    "command": "code-runner.run"
+  },
+  {
+    "key": "ctrl+alt+n",
+    "command": "-code-runner.run"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "editor.action.commentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "f3 f4",
+    "command": "workbench.action.terminal.clear"
+  },
+  {
+    "key": "f2 f3",
+    "command": "extension.liveServer.goOnline",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "f5 f6",
+    "command": "workbench.action.terminal.moveToTerminalPanel"
+  },
+  {
+    "key": "shift+up",
+    "command": "editor.action.insertCursorAbove",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+down",
+    "command": "editor.action.insertCursorBelow",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+win+n",
+    "command": "-welcome.showNewFileEntries"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "explorer.newFile"
+  }
+]
 
+```
 
 
 ## ✒ Font Info
