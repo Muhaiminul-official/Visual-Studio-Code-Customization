@@ -329,11 +329,64 @@ I've tweaked its appearance, added and modified features, installed extensions, 
 ]
 
 ```
+## 🛠 VS Code Split View
+To set up a split view in VS Code for handling input/output operations in Java on Windows, follow these detailed steps for better readability and structure:
 
+### Step-by-Step Guide:
 
+#### Step 1: Open `input.txt` and `output.txt` Files
+1. In VS Code, create two files named `input.txt` and `output.txt`.
+2. Add your input data in `input.txt` and leave `output.txt` empty initially (this will hold your program’s output).
+
+#### Step 2: Split and Position the Files
+1. Open `input.txt` and `output.txt` in the editor.
+2. Split the view:
+   - Right-click on `input.txt` tab and choose **Split Down**.
+   - This will position `input.txt` at the top and `output.txt` at the bottom.
+3. Adjust the split view according to your needs.
+
+#### Step 3: Configure the Task
+1. Go to the **Terminal** menu and select **Configure Tasks**.
+2. Choose **Create tasks.json file from template** → **Others**.
+3. Replace the contents of `tasks.json` with the following code:
+
+```json
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "compile and run",
+      "type": "shell",
+      "command": "javac ${file} && java ${fileBasenameNoExtension} < input.txt > output.txt",
+      "options": {
+        "shell": {
+          "executable": "cmd.exe",
+          "args": ["/c"]
+        }
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
+```
+
+#### Step 4: Run the Code
+1. Save the `tasks.json` file.
+2. Open the Java file you want to compile and run.
+3. Use **Ctrl + Shift + B** to run the task.
+4. The program will take input from `input.txt` and write the output to `output.txt`.
+
+### Notes:
+- Make sure your Java file is in the same directory as `input.txt` and `output.txt`.
+- The task will first compile the Java file and then execute it, using the input from `input.txt` and redirecting the output to `output.txt`.
+
+This setup allows you to easily test Java programs that take input and produce output in a structured way.
 ## ✒ Font Info
 - [Fira Code](https://fonts.google.com/specimen/Fira+Code)
 - [Operator Mono](https://www.typography.com/fonts/operator/styles)
 
 ## 🧑‍💻 Contributor
- [Muhaiminul Islam]
+ [Muhaiminul Islam](https://github.com/muhaiminul-official)
