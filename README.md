@@ -11,7 +11,7 @@ I've tweaked its appearance, added and modified features, installed extensions, 
   // ============================
   // Editor & Font Settings
   // ============================
-  "editor.fontFamily": "Operator Mono, Fira Code",
+  "editor.fontFamily": "Operator Mono Lig, Fira code",
   "editor.fontSize": 20,
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
@@ -30,7 +30,7 @@ I've tweaked its appearance, added and modified features, installed extensions, 
   "editor.suggest.showInlineDetails": true,
   "editor.guides.bracketPairs": true,
   "editor.guides.bracketPairsHorizontal": true,
-  "editor.minimap.autohide": true,
+  "editor.minimap.autohide": "mouseover",
   "editor.minimap.sectionHeaderFontSize": 15,
 
   // ============================
@@ -60,44 +60,45 @@ I've tweaked its appearance, added and modified features, installed extensions, 
   "terminal.integrated.defaultLocation": "editor",
   "terminal.integrated.defaultProfile.windows": "PowerShell",
   "terminal.integrated.mouseWheelZoom": true,
-  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontSize": 20,
 
   // ============================
   // Auto Save Settings
   // ============================
   "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 200,
+  "files.autoSaveDelay": 500,
 
   // ============================
   // UI Customization
   // ============================
   "workbench.colorCustomizations": {
-    "editorGroupHeader.tabsBackground": "#2c2c54",
-    "activityBar.background": "#090922",
-    "activityBar.foreground": "#1bde42",
-    "activityBar.inactiveForeground": "#FFFFFF",
-    "sideBar.background": "#000000",
+    "editorGroupHeader.tabsBackground": "#0a0a1b",
+    "activityBar.background": "#0b0b12",
+    "activityBar.foreground": "#3df5ae",
+    "activityBar.inactiveForeground": "#637067",
+    "sideBar.background": "#0b0b0b",
+
     "sideBar.foreground": "#ffffff",
     "editor.selectionHighlightBorder": "#ffffff",
-    "editor.lineHighlightBackground": "#aa9e9e20",
-    "editor.background": "#000000",
-    "minimap.background": "#0d0d0f",
+    "editor.lineHighlightBackground": "#ffffff20",
+    "editor.background": "#0c0c0c",
+    "minimap.background": "#131315",
     "menu.background": "#0d1732",
     "menu.foreground": "#ffffff",
-    "tab.activeBackground": "#000000",
-    "tab.inactiveBackground": "#191846",
+    "tab.activeBackground": "#312656",
+    "tab.inactiveBackground": "#070712",
     "terminal.border": "#2c2c54",
-    "terminal.background": "#06061e",
-    "statusBar.background": "#111125",
+    "terminal.background": "#0d0d0e",
+    "statusBar.background": "#151518",
     "statusBar.foreground": "#f8f8f8",
-    "scrollbarSlider.background": "#474787",
-    "scrollbarSlider.hoverBackground": "#706fd3"
+    "scrollbarSlider.background": "#3e3e45",
+    "scrollbarSlider.hoverBackground": "#a4a4b6"
   },
   "editor.tokenColorCustomizations": {
     "comments": "#94909d"
   },
   "workbench.iconTheme": "material-icon-theme",
-  "window.zoomLevel": 0.5,
+  "window.zoomLevel": 0.3,
 
   // ============================
   // Git & Version Control
@@ -161,7 +162,6 @@ I've tweaked its appearance, added and modified features, installed extensions, 
   "security.workspace.trust.untrustedFiles": "open",
   "redhat.telemetry.enabled": true,
   "php.validate.executablePath": "",
-  "chat.commandCenter.enabled": false,
   "cmake.options.statusBarVisibility": "visible",
   "editor.linkedEditing": true,
 
@@ -179,8 +179,14 @@ I've tweaked its appearance, added and modified features, installed extensions, 
   "emmet.useInlineCompletions": true,
 
   // CSS & Linting
-  "css.lint.unknownAtRules": "ignore"
+  "css.lint.unknownAtRules": "ignore",
+
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "codeium.enableCodeLens": false,
+  "terminal.integrated.fontFamily": "Operator Mono Lig, Fira Code"
 }
+
 
 ```
 
