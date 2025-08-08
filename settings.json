@@ -1,0 +1,191 @@
+{
+  // ============================
+  // Editor & Font Settings
+  // ============================
+
+
+
+  // Disable sticky scroll headers (line shadows at top when scrolling)
+  "editor.stickyScroll.enabled": false,
+
+
+
+  // "editor.fontFamily": "Fira Code",
+  "editor.fontFamily": "Operator Mono Lig",
+  "vscode_custom_css.policy": true,
+  "editor.fontSize": 20,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorBlinking": "expand",
+  "editor.mouseWheelZoom": true,
+  "editor.autoClosingBrackets": "always",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeLensFontSize": 12,
+  "editor.rename.enablePreview": false,
+  "editor.quickSuggestions": {
+    "strings": "on",
+    "comments": "on"
+  },
+  "editor.inlineSuggest.enabled": true,
+  "editor.suggest.showInlineDetails": true,
+  "editor.guides.bracketPairs": true,
+  "editor.guides.bracketPairsHorizontal": true,
+  "editor.minimap.autohide": "mouseover",
+  "editor.minimap.sectionHeaderFontSize": 15,
+
+  // ============================
+  // Formatting & Code Style
+  // ============================
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "prettier.proseWrap": "always",
+  "prettier.singleQuote": true,
+  "prettier.arrowParens": "avoid",
+
+  // Language-Specific Formatting
+  "[cpp]": { "editor.defaultFormatter": "ms-vscode.cpptools" },
+  "[java]": { "editor.defaultFormatter": "redhat.java" },
+  "[c]": { "editor.defaultFormatter": "ms-vscode.cpptools" },
+
+  // ============================
+  // Code Runner Settings
+  // ============================
+  "code-runner.saveAllFilesBeforeRun": true,
+  "code-runner.runInTerminal": true,
+
+  // ============================
+  // Terminal Settings
+  // ============================
+  "terminal.integrated.defaultLocation": "editor",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.mouseWheelZoom": true,
+  "terminal.integrated.fontSize": 20,
+
+  // ============================
+  // Auto Save Settings
+  // ============================
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 500,
+
+  // ============================
+  // UI Customization
+  // ============================
+  "workbench.colorCustomizations": {
+    "editorGroupHeader.tabsBackground": "#0a0a1b",
+    "activityBar.background": "#0b0b12",
+    "activityBar.foreground": "#3df5ae",
+    "activityBar.inactiveForeground": "#637067",
+    "sideBar.background": "#0b0b0b",
+    "sideBar.foreground": "#ffffff",
+    "editor.selectionHighlightBorder": "#ffffff",
+
+    "editor.lineHighlightBackground": "#ffffff20",
+    // "editor.background": "#0c0c0c",
+    "minimap.background": "#131315",
+    "menu.background": "#0d1732",
+    "menu.foreground": "#ffffff",
+    "tab.activeBackground": "#312656",
+    "tab.inactiveBackground": "#070712",
+    "terminal.border": "#2c2c54",
+    "terminal.background": "#0d0d0e",
+    "statusBar.background": "#151518",
+    "statusBar.foreground": "#f8f8f8",
+    "scrollbarSlider.background": "#3e3e45",
+    "scrollbarSlider.hoverBackground": "#a4a4b6"
+  },
+  "editor.tokenColorCustomizations": {
+    "comments": "#94909d"
+  },
+  "workbench.iconTheme": "vscode-great-icons",
+  "window.zoomLevel": 0.3,
+
+  // ============================
+  // Git & Version Control
+  // ============================
+  "git.autofetch": true,
+
+  // ============================
+  // Extensions Settings
+  // ============================
+
+  // Codeium AI Settings
+  "codeium.enableConfig": {
+    "*": true,
+    "markdown": true,
+    "properties": true
+  },
+  "codeium.aggressiveShutdown": true,
+  "codeium.enableAutoTrigger": true,
+  "codeium.enableSupercomplete": true,
+  "codeium.enableSupercompleteCommit": true,
+  "codeium.enableSupercompletePreview": true,
+  "codeium.enableSupercompleteSuggest": true,
+  "codeium.enableSupercompleteTrigger": true,
+  "codeium.enableTrigger": true,
+  "codeium.enableTriggerSuggest": true,
+  "codeium.showStatusBarItem": true,
+  "codeium.disableSupercomplete": true,
+
+  // GitHub Copilot Settings
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+
+  // Codegeex AI Settings
+  "Codegeex.Privacy": true,
+  "Codegeex.CompletionDelay": 0.3,
+  "Codegeex.SidebarUI.LanguagePreference": "English",
+  "Codegeex.GenerationPreference": "automatic",
+  "Codegeex.DisabledFor": { "": true },
+  "Codegeex.EnableExtension": false,
+
+  // Live Server & Sass Compiler
+  "liveServer.settings.CustomBrowser": "chrome",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "/css"
+    }
+  ],
+  "liveSassCompile.settings.generateMap": false,
+
+  // ============================
+  // Miscellaneous Settings
+  // ============================
+  "security.workspace.trust.untrustedFiles": "open",
+  "redhat.telemetry.enabled": true,
+  "php.validate.executablePath": "",
+  "cmake.options.statusBarVisibility": "visible",
+  "editor.linkedEditing": true,
+
+  // Screencast Mode (For Recording Tutorials)
+  "screencastMode.onlyKeyboardShortcuts": true,
+  "screencastMode.mouseIndicatorColor": "#139616",
+  "screencastMode.verticalOffset": 0,
+
+  // Quick Open Settings
+  "workbench.quickOpen.preserveInput": true,
+  "workbench.editor.enablePreviewFromQuickOpen": true,
+  "workbench.quickOpen.closeOnFocusLost": false,
+
+  // Emmet & Code Editing
+  "emmet.useInlineCompletions": true,
+
+  // CSS & Linting
+  "css.lint.unknownAtRules": "ignore",
+
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "codeium.enableCodeLens": false,
+  "terminal.integrated.fontFamily": "Operator Mono Lig",
+  "comments.maxHeight": false,
+  "workbench.colorTheme": "Andromeda Colorizer"
+}
