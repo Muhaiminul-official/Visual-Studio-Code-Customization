@@ -3,16 +3,12 @@
   // Editor & Font Settings
   // ============================
 
-
-
   // Disable sticky scroll headers (line shadows at top when scrolling)
   "editor.stickyScroll.enabled": false,
 
-
-
   // "editor.fontFamily": "Fira Code",
   "editor.fontFamily": "Operator Mono Lig",
-  "vscode_custom_css.policy": true,
+
   "editor.fontSize": 20,
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
@@ -61,13 +57,7 @@
   "terminal.integrated.defaultLocation": "editor",
   "terminal.integrated.defaultProfile.windows": "PowerShell",
   "terminal.integrated.mouseWheelZoom": true,
-  "terminal.integrated.fontSize": 20,
-
-  // ============================
-  // Auto Save Settings
-  // ============================
-  "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 500,
+  "terminal.integrated.fontSize": 17,
 
   // ============================
   // UI Customization
@@ -130,10 +120,11 @@
 
   // GitHub Copilot Settings
   "github.copilot.enable": {
-    "*": false,
+    "*": true,
     "plaintext": false,
     "markdown": false,
-    "scminput": false
+    "scminput": false,
+    "dart": true
   },
 
   // Codegeex AI Settings
@@ -187,5 +178,19 @@
   "codeium.enableCodeLens": false,
   "terminal.integrated.fontFamily": "Operator Mono Lig",
   "comments.maxHeight": false,
-  "workbench.colorTheme": "Andromeda Colorizer"
+  "workbench.colorTheme": "Andromeda Colorizer",
+  "database-client.autoSync": true,
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "dart.previewFlutterUiGuides": true,
+  "dart.previewFlutterUiGuidesCustomTracking": true,
+  "dart.openDevTools": "flutter",
+  "files.autoSaveWorkspaceFilesOnly": true,
+  "files.autoSave": "afterDelay"
 }
